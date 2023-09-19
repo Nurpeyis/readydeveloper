@@ -9,8 +9,8 @@ export const ButtonCircle = memo(
     label?: string;
   }) => {
     return (
-      <button className="group flex cursor-pointer select-none items-center text-white hover:text-skyblue-light">
-        <div className="flex rounded-full bg-white p-2.5 text-white drop-shadow-[3px_3px_0px_skyblue] group-hover:bg-skyblue-light group-active:drop-shadow-none">
+      <button className="group flex cursor-pointer select-none items-center  text-white hover:text-skyblue-light">
+        <div className="flex rounded-full border border-solid border-skyblue bg-white p-2.5 text-white drop-shadow-[3px_3px_0px_skyblue] group-hover:bg-skyblue-light group-active:drop-shadow-none">
           {icon}
         </div>
 

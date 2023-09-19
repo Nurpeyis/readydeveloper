@@ -1,5 +1,5 @@
 import { memo } from "react";
-import { CameraNav, Categories, Header } from "@/widgets";
+import { CameraNav, Categories, Header, SubCategories } from "@/widgets";
 
 export const HomePage = memo(() => {
   return (
@@ -10,8 +10,9 @@ export const HomePage = memo(() => {
         <CameraNav />
       </section>
 
-      <footer className="absolute bottom-8 flex w-full justify-end">
+      <footer className="absolute bottom-8 flex w-full items-center px-6 sm:px-12">
         <Categories />
+        <SubCategories />
       </footer>
     </div>
   );

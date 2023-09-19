@@ -1,25 +1,36 @@
 import { memo } from "react";
-import { Category } from "./ui";
-import { IconAccessibility, IconPalette } from "@/shared";
+import { IconAccessibility, IconPalette, ItemCircle } from "@/shared";
 
 export const Categories = memo(() => {
   return (
-    <div className="flex items-center px-8">
-      <Category
+    <div className="mr-8 flex flex-1 items-center overflow-x-auto sm:justify-end">
+      <ItemCircle
         icon={<IconAccessibility fontSize={30} />}
         label="Poses"
         active
       />
-      <Category icon={<IconPalette fontSize={30} />} label="Colors" />
-      <Category icon={<div className="h-[30px] w-[30px]"></div>} label="Hair" />
-      <Category icon={<div className="h-[30px] w-[30px]"></div>} label="Bird" />
-      <Category
+      <ItemCircle icon={<IconPalette fontSize={30} />} label="Colors" />
+      <ItemCircle
+        icon={<div className="h-[30px] w-[30px]"></div>}
+        label="Hair"
+      />
+      <ItemCircle
+        icon={<div className="h-[30px] w-[30px]"></div>}
+        label="Bird"
+      />
+      <ItemCircle
         icon={<div className="h-[30px] w-[30px]"></div>}
         label="Faces"
       />
-      <Category icon={<div className="h-[30px] w-[30px]"></div>} label="Hats" />
-      <Category icon={<div className="h-[30px] w-[30px]"></div>} label="Logo" />
-      <Category
+      <ItemCircle
+        icon={<div className="h-[30px] w-[30px]"></div>}
+        label="Hats"
+      />
+      <ItemCircle
+        icon={<div className="h-[30px] w-[30px]"></div>}
+        label="Logo"
+      />
+      <ItemCircle
         icon={<div className="h-[30px] w-[30px]"></div>}
         label="Lights"
       />
